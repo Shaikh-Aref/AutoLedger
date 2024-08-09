@@ -1,0 +1,27 @@
+/* footer.css */
+.footer {
+    background-color: #343a40; /* Dark background for footer */
+    color: #ffffff; /* White text for footer */
+  }
+  
+  .footer a {
+    color: #ffffff; /* Ensure all links in footer are white */
+  }
+  
+  .footer a:hover {
+    color: #adb5bd; /* Light gray on hover */
+  }
+  
+  .footer h5 {
+    margin-bottom: 1rem;
+  }
+  
+  .footer p, .footer ul {
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer ul {
+    padding-left: 0;
+    list-style-type: none;
+  }
+  
