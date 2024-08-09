@@ -1,0 +1,55 @@
+1.	create database automobile;
+
+2.	use automobile;
+
+3.	create table admin (username varchar(50),password varchar(2000));
+
+4.	create table contact_us (
+		id int primary key, 
+		first_name varchar(50) not null, 
+		last_name varchar(50) not null, 
+		email varchar(50) not null,
+		message varchar(50) not null);
+
+5.	insert into contact_us 
+		( first_name, last_name, email, message )
+		values ('Aref', 'Shaikh', 'Shaikharef5377@gmail.com', 'You Guys Are Awesome!!!' );
+
+6.	create table service 
+
+
+7.	insert into service 
+		( customer_name, 
+		vehicle_name, 
+		last_service_date, 
+		last_km, 
+		due_date, 
+		due_km, 
+		full_service, 
+		oil_change, 
+		washing, 
+		charges ) 
+		values ('Aref', 
+		'BMW GTR', 
+		'2024-05-16', 
+		1000, 
+		'1014-08-16', 
+		5000, 
+		'yes', 
+		'yes', 
+		'yes', 
+		5000 );
+
+
+
+npm install moment;
+
+import moment from "moment"
+
+const formattedResults = result.map((appointment) => {
+                return {
+                  ...appointment,
+                  Appointment_Date: moment(appointment.Appointment_Date).format('YYYY-MM-DD')
+                };
+              });
+            res.send(formattedResults);
